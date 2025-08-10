@@ -14,34 +14,51 @@ A robust, local PDF splitting tool with an intuitive web interface. Split large 
 
 ---
 
-## 🚀 Quick Start (Portable Version - No Installation Required!)
+## 🚀 Quick Start - Choose Your Platform
 
-**Download** → **Extract** → **Double-click launcher** → **Start splitting PDFs!**
+### 🪟 Windows Users
+**Download EXE** → **Double-click** → **Start splitting PDFs!**
 
-*No Python installation needed. Everything is included.*
+### 🍎 Mac Users  
+**Download** → **Extract** → **Double-click .command file** → **Start splitting PDFs!**
+
+*No installation or technical knowledge required.*
 
 ---
 
-## 📥 Installation
+## 📥 Download & Installation
 
 ### System Requirements
 - **Windows**: Windows 10 or later (64-bit)
-- **macOS**: macOS 10.14 (Mojave) or later
-- **RAM**: 4GB minimum, 8GB recommended for large PDFs
+- **macOS**: macOS 10.14 (Mojave) or later  
+- **RAM**: 4GB minimum, 8GB recommended
 - **Disk Space**: 100MB free space
-- **Browser**: Any modern browser (Chrome, Firefox, Edge)
+- **Browser**: Any modern browser (Chrome, Firefox, Edge, Safari)
 
-### For End Users (Portable Package)
+### For Windows Users
 
-1. **Download** `SimplePDFSplitter-Portable-v1.0.0.zip`
-2. **Extract** the ZIP file to any folder (e.g., Desktop)
-3. **Double-click** one of these launchers:
-   - `Start PDF Splitter.vbs` (Recommended - runs silently)
-   - `Simple PDF Splitter.bat` (Shows brief splash screen)
-4. **Your browser opens automatically** to the app
-5. **Start splitting PDFs immediately!**
+⚠️ **Don't use the green "Code" button** - go to **[Releases](https://github.com/wallst-code/simple-pdf-splitter/releases)**
 
-**That's it! No Python needed. No technical setup required.**
+1. **Download** `Simple PDF Splitter.exe` (39 MB)
+2. **Double-click** the EXE file
+3. **If Windows shows a security warning:**
+   - Click "More info"
+   - Click "Run anyway" (this is normal for new software)
+4. **Your browser opens automatically**
+5. **Start splitting PDFs!**
+
+### For Mac Users
+
+⚠️ **Don't use the green "Code" button** - go to **[Releases](https://github.com/wallst-code/simple-pdf-splitter/releases)**
+
+1. **Download** `SimplePDFSplitter-Mac.zip`
+2. **Extract** the ZIP file (double-click it)
+3. **Right-click** `SimplePDFSplitter.command` and select "Open"
+   - First time only: Click "Open" in the security dialog
+4. **Your browser opens automatically**
+5. **Start splitting PDFs!**
+
+**Note**: Mac version requires Python 3 (pre-installed on most Macs since 10.15)
 
 ---
 

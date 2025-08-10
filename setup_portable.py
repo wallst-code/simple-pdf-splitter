@@ -55,8 +55,42 @@ def setup_portable_python():
     with zipfile.ZipFile(python_zip, 'r') as zip_ref:
         zip_ref.extractall(python_dir)
     
+    # Setup pip for embedded Python
+    print("\n4. Setting up pip for embedded Python...")
+    # Download get-pip.py
+    get_pip_url = "https://bootstrap.pypa.io/get-pip.py"
+    get_pip_path = python_dir / "get-pip.py"
+    
+    print("   Downloading pip installer...")
+    urllib.request.urlretrieve(get_pip_url, get_pip_path)
+    
+    # Install pip
+    print("   Installing pip...")
+    import subprocess
+    subprocess.run([str(python_dir / "python.exe"), str(get_pip_path)], 
+                   stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    
+    # Modify python._pth to allow pip to work
+    pth_file = python_dir / "python312._pth"
+    if pth_file.exists():
+        with open(pth_file, 'r') as f:
+            lines = f.readlines()
+        # Uncomment import site to make pip work
+        with open(pth_file, 'w') as f:
+            for line in lines:
+                if line.strip() == '#import site':
+                    f.write('import site\n')
+                else:
+                    f.write(line)
+    
+    # Install required packages
+    print("   Installing required packages...")
+    subprocess.run([str(python_dir / "python.exe"), "-m", "pip", "install", 
+                   "-r", str(base_dir / "requirements.txt"), "--no-warn-script-location"],
+                   stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    
     # Copy application files
-    print("\n4. Copying application files...")
+    print("\n5. Copying application files...")
     app_dir = portable_dir / "app"
     
     # Directories to copy
@@ -84,7 +118,7 @@ def setup_portable_python():
             print(f"   Copied: {file_name}")
     
     # Create launcher batch file
-    print("\n5. Creating launcher...")
+    print("\n6. Creating launcher...")
     launcher_content = """@echo off
 title Simple PDF Splitter
 cd /d "%~dp0"
@@ -125,7 +159,7 @@ if errorlevel 1 (
     print(f"   Created: {launcher_file.name}")
     
     # Create setup instructions
-    print("\n6. Creating instructions...")
+    print("\n7. Creating instructions...")
     instructions = """Simple PDF Splitter - Portable Edition
 =====================================
 
