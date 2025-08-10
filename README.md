@@ -14,11 +14,11 @@ A robust, local PDF splitting tool with an intuitive web interface. Split large 
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Quick Start (Portable Version - No Installation Required!)
 
-**Download** → **Extract** → **Run** → **Open Browser to `localhost:5000`**
+**Download** → **Extract** → **Double-click launcher** → **Start splitting PDFs!**
 
-*Having installation issues? Jump to the [Installation Troubleshooting](#-installation-troubleshooting) section below.*
+*No Python installation needed. Everything is included.*
 
 ---
 
@@ -29,25 +29,30 @@ A robust, local PDF splitting tool with an intuitive web interface. Split large 
 - **macOS**: macOS 10.14 (Mojave) or later
 - **RAM**: 4GB minimum, 8GB recommended for large PDFs
 - **Disk Space**: 100MB free space
+- **Browser**: Any modern browser (Chrome, Firefox, Edge)
 
-### Download Instructions
+### For End Users (Portable Package)
 
-1. **Download the latest version** (when available)
-2. **Choose the appropriate version**:
-   - `Simple-PDF-Splitter-Windows.zip` for Windows
-   - `Simple-PDF-Splitter-macOS.zip` for macOS
-3. **Extract the downloaded file** to a folder of your choice
-4. **Follow the platform-specific instructions below**
+1. **Download** `SimplePDFSplitter-Portable-v1.0.0.zip`
+2. **Extract** the ZIP file to any folder (e.g., Desktop)
+3. **Double-click** one of these launchers:
+   - `Start PDF Splitter.vbs` (Recommended - runs silently)
+   - `Simple PDF Splitter.bat` (Shows brief splash screen)
+4. **Your browser opens automatically** to the app
+5. **Start splitting PDFs immediately!**
+
+**That's it! No Python needed. No technical setup required.**
 
 ---
 
-## 🖥️ Platform-Specific Setup
+## 🖥️ For Developers (Source Code)
 
-### Windows Installation
+### If you want to run from source code:
 
-1. **Extract the ZIP file** to `C:\Simple-PDF-Splitter` (or your preferred location)
-2. **Navigate to the extracted folder**
-3. **Double-click `Simple-PDF-Splitter.exe`**
+1. **Clone the repository**
+2. **Install Python 3.8+**
+3. **Install dependencies**: `pip install -r requirements.txt`
+4. **Run**: `python main.py`
 
 #### ⚠️ Expected Security Warning
 Windows will show this warning on first run:
