@@ -1,1 +1,0 @@
-"""Web views package for Flask application."""
