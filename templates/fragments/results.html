@@ -1,0 +1,83 @@
+<!-- Results fragment for HTMX -->
+<div class="results-container">
+    <div class="alert alert-success">
+        <h3>✅ PDF Split Successfully!</h3>
+        <p>{{ results|length }} file(s) created</p>
+    </div>
+    
+    <div class="results-list">
+        {% for result in results %}
+            {% if result.success %}
+            <div class="result-item">
+                <div class="result-info">
+                    <strong>{{ result.filename }}</strong>
+                    <span class="page-range">Pages {{ result.start_page }}-{{ result.end_page }}</span>
+                    {% if result.document_code %}
+                        <span class="badge">{{ result.document_code }}</span>
+                    {% endif %}
+                </div>
+                <a href="/download/{{ result.filename }}" 
+                   class="btn-download"
+                   download>
+                    Download
+                </a>
+            </div>
+            {% else %}
+            <div class="result-item error">
+                <strong>Failed:</strong> {{ result.error }}
+            </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+    
+    <div class="results-summary">
+        <p class="success-text">
+            📁 All files have been saved to your Downloads folder
+        </p>
+    </div>
+    
+    <div class="download-section">
+        <h4 class="download-title">Download Options:</h4>
+        <div class="download-options">
+            <div class="text-center">
+                <p class="option-label">
+                    📁 Download individual files using the buttons above
+                </p>
+            </div>
+            <div class="text-center">
+                <p class="option-label">- OR -</p>
+            </div>
+            <div class="text-center">
+                <a href="/download-all" 
+                   class="btn-secondary" 
+                   onmouseover="this.style.background='#5a6268'" 
+                   onmouseout="this.style.background='#6c757d'"
+                   style="display: inline-block; text-decoration: none; padding: 0.4rem 0.8rem; font-size: 0.85rem; background: #6c757d; color: white; border-radius: 4px; transition: background-color 0.2s; position: relative; top: -7px;">
+                    📦 ZIP All
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div style="margin-top: 1.5rem; text-align: center;">
+        <button type="button"
+                class="btn-primary"
+                onclick="window.location.href='/'"
+                style="padding: 0.75rem 2rem; font-size: 1.1rem;">
+            📄 Add New PDF
+        </button>
+    </div>
+</div>
+
+<script>
+    // Enable results section and update status
+    document.getElementById('results-section').classList.remove('disabled');
+    document.getElementById('results-status').textContent = 'Complete';
+    document.getElementById('results-status').className = 'section-status status-complete';
+    
+    // Update other sections
+    document.getElementById('upload-status').textContent = 'Complete';
+    document.getElementById('upload-status').className = 'section-status status-complete';
+    document.getElementById('configure-status').textContent = 'Complete';
+    document.getElementById('configure-status').className = 'section-status status-complete';
+</script>

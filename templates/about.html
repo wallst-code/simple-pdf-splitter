@@ -1,0 +1,217 @@
+{% extends "base.html" %}
+
+{% block title %}About - Simple PDF Splitter{% endblock %}
+
+{% block styles %}
+<style>
+    .about-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .back-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background: #6c757d;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        transition: background 0.2s;
+    }
+    
+    .back-button:hover {
+        background: #5a6268;
+    }
+    
+    .about-header {
+        text-align: center;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #dee2e6;
+    }
+    
+    .about-header h1 {
+        color: #333;
+        margin-bottom: 10px;
+    }
+    
+    .version-badge {
+        display: inline-block;
+        padding: 5px 15px;
+        background: #007bff;
+        color: white;
+        border-radius: 20px;
+        font-size: 14px;
+    }
+    
+    .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        margin: 30px 0;
+    }
+    
+    .feature-card {
+        background: #f8f9fa;
+        padding: 20px;
+        border-radius: 8px;
+        border: 1px solid #dee2e6;
+    }
+    
+    .feature-card h3 {
+        color: #007bff;
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+    
+    .feature-card p {
+        color: #666;
+        font-size: 14px;
+        margin: 0;
+    }
+    
+    .section {
+        margin: 40px 0;
+    }
+    
+    .section h2 {
+        color: #333;
+        border-bottom: 2px solid #007bff;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .privacy-list {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .privacy-list li {
+        padding: 10px 0;
+        padding-left: 30px;
+        position: relative;
+    }
+    
+    .privacy-list li:before {
+        content: "✅";
+        position: absolute;
+        left: 0;
+    }
+    
+    .github-button {
+        display: inline-block;
+        padding: 12px 24px;
+        background: #24292e;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        transition: background 0.2s;
+        margin: 20px 0;
+    }
+    
+    .github-button:hover {
+        background: #1a1e22;
+    }
+    
+    .footer-info {
+        text-align: center;
+        margin-top: 40px;
+        padding-top: 30px;
+        border-top: 1px solid #dee2e6;
+        color: #6c757d;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="about-container">
+    <a href="/" class="back-button">← Back to Application</a>
+    
+    <div class="about-header">
+        <h1>Simple PDF Splitter</h1>
+        <span class="version-badge">Version 1.0</span>
+        <p style="margin-top: 15px; color: #666;">A robust, local PDF splitting tool with an intuitive web interface</p>
+    </div>
+    
+    <div class="section">
+        <h2>Key Features</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>🔒 100% Private</h3>
+                <p>All processing happens locally on your computer. No cloud uploads, no data transmission.</p>
+            </div>
+            <div class="feature-card">
+                <h3>⚡ Batch Processing</h3>
+                <p>Split multiple page ranges from the same document in one operation.</p>
+            </div>
+            <div class="feature-card">
+                <h3>📁 Smart Naming</h3>
+                <p>Professional file naming with client names, case numbers, and document codes.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🧹 Auto Cleanup</h3>
+                <p>Temporary files are automatically cleaned up when you close the application.</p>
+            </div>
+            <div class="feature-card">
+                <h3>📊 Coverage Analysis</h3>
+                <p>Real-time statistics showing document coverage and gap detection.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🎯 Drag & Drop</h3>
+                <p>Intuitive interface with drag-and-drop file upload support.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>Privacy & Security</h2>
+        <p>Your privacy is our top priority. This application operates with complete transparency:</p>
+        <ul class="privacy-list">
+            <li>No internet connection required or used</li>
+            <li>No data leaves your computer</li>
+            <li>No user tracking or analytics</li>
+            <li>No persistent storage of your files</li>
+            <li>Files processed in memory only</li>
+            <li>Automatic cleanup on exit</li>
+        </ul>
+        <p><strong>In simple terms:</strong> This app works exactly like a desktop calculator - it helps you do something useful, then forgets everything.</p>
+    </div>
+    
+    <div class="section">
+        <h2>Why This Project Exists</h2>
+        <p>This tool was created specifically for criminal defense attorneys who receive discovery in massive PDF files containing dozens of different documents - police reports, witness statements, lab results, photos - all bundled together. It's a pain to work with, and I needed an easy way to split them apart.</p>
+        
+        <p><strong>The real problem:</strong> Most PDF tools require uploading files to "some company's" servers. That's unacceptable when dealing with client data. I don't want my clients' sensitive information sitting on someone else's computer, being processed by who knows what, stored who knows where.</p>
+        
+        <p>So I built this tool with these principles:</p>
+        <ul>
+            <li><strong>Complete privacy</strong> - I know exactly what's happening with my client data (nothing leaves my computer)</li>
+            <li><strong>Reliability over features</strong> - Built with stable, proven libraries instead of the newest trends</li>
+            <li><strong>Built to last</strong> - Avoids dependencies that might break next year</li>
+            <li><strong>Just works</strong> - A tool I can trust and depend on for years to come</li>
+        </ul>
+        
+        <p>This wasn't built to be the most feature-rich PDF tool. It was built to do one thing well: split PDFs privately and reliably, so criminal defense attorneys can process discovery without compromising client confidentiality.</p>
+    </div>
+    
+    <div class="section">
+        <h2>Source Code</h2>
+        <p>This is an open source project released under the MIT License.</p>
+        <a href="https://github.com/wallst-code/simple-pdf-splitter" target="_blank" class="github-button">
+            <svg height="20" width="20" viewBox="0 0 16 16" style="vertical-align: middle; margin-right: 8px;">
+                <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+            </svg>
+            View on GitHub
+        </a>
+        <p style="margin-top: 15px; font-size: 14px; color: #6c757d;">Note: This project is provided as-is. While the code is available for review and modification, active maintenance is not guaranteed.</p>
+    </div>
+    
+    <div class="footer-info">
+        <p><strong>© 2025 Simple PDF Splitter</strong></p>
+        <p>Released under the MIT License</p>
+    </div>
+</div>
+{% endblock %}
