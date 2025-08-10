@@ -1,0 +1,4 @@
+# file: C:\Users\senit\source\repos\simple_pdf_splitter\src\presenters\helpers\split_manager.py
+# hypothesis_version: 6.137.1
+
+['case_number', 'client_name', 'document_code', 'end_page', 'output_name', 'splits', 'start_page']

@@ -1,0 +1,31 @@
+<!-- Split row fragment for configuration form -->
+<div class="split-row">
+    <div class="form-group">
+        <label>Start Page:</label>
+        <input type="number" name="start_page_{{ loop.index0 }}" value="{{ split.start_page|default(1) }}" 
+               min="1" max="{{ document.page_count }}" required>
+    </div>
+    <div class="form-group">
+        <label>End Page:</label>
+        <input type="number" name="end_page_{{ loop.index0 }}" value="{{ split.end_page|default(document.page_count) }}"
+               min="1" max="{{ document.page_count }}" required>
+    </div>
+    <div class="form-group flex-1">
+        <label>Document Code:</label>
+        <input type="text" name="document_code_{{ loop.index0 }}" value="{{ split.document_code|default('') }}" 
+               placeholder="Optional">
+    </div>
+    <div class="form-group flex-1">
+        <label>Other:</label>
+        <input type="text" name="output_name_{{ loop.index0 }}" value="{{ split.output_name|default('') }}" 
+               placeholder="Optional">
+    </div>
+    <button type="button" 
+            class="btn-remove"
+            hx-delete="/htmx/remove-split/{{ loop.index0 }}"
+            hx-target="closest .split-row"
+            hx-swap="outerHTML"
+            hx-include="#configure-form">
+        Remove
+    </button>
+</div>

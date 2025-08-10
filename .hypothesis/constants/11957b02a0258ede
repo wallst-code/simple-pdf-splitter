@@ -1,0 +1,4 @@
+# file: C:\Users\senit\source\repos\simple_pdf_splitter\app.py
+# hypothesis_version: 6.137.1
+
+[1.5, 1024, 3600, '*.pdf', 'MAX_CONTENT_LENGTH', 'Opening browser...', 'SESSION_PERMANENT', 'UPLOAD_FOLDER', 'WERKZEUG_RUN_MAIN', 'WTF_CSRF_ENABLED', 'WTF_CSRF_TIME_LIMIT', '__main__', 'src', 'temp_uploads']

@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block title %}Simple PDF Splitter{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+<script src="{{ url_for('static', filename='js/pdf_validator.js') }}"></script>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <!-- Failsafe Notice (shown when HTMX fails) -->
+    <div id="failsafe-notice" class="failsafe-notice">
+        <p>⚠️ <strong>Basic Mode:</strong> Dynamic features unavailable. Using standard forms - the app will still work but require page refreshes.</p>
+    </div>
+    
+    <!-- Step 1: Upload -->
+    <div class="workflow-section" id="upload-section">
+        <div class="section-header">
+            <h2>📤 Add Your PDF</h2>
+            <span class="section-status status-active" id="upload-status">Active</span>
+        </div>
+        <div class="section-content">
+            <!-- HTMX Enhanced Upload (with drag-and-drop) -->
+            <div class="htmx-only">
+                <div class="upload-area" id="upload-area">
+                    <div class="upload-icon">📁</div>
+                    <h3>Drag & Drop PDF Here</h3>
+                    <p>or click to browse</p>
+                    <p class="file-size-note">Maximum file size: 100MB</p>
+                    <input type="file" 
+                           name="pdf_file" 
+                           id="file-input"
+                           accept=".pdf"
+                           class="hidden-input">
+                </div>
+                <div id="upload-spinner" class="loading upload-spinner">
+                    <span>Uploading...</span>
+                </div>
+            </div>
+            
+            <!-- Fallback Upload (standard form) -->
+            <div class="no-htmx">
+                <form action="/upload" method="post" enctype="multipart/form-data" class="fallback-upload">
+                    <h4>Select PDF file to upload</h4>
+                    <div class="form-group">
+                        <input type="file" name="pdf_file" accept=".pdf" required>
+                    </div>
+                    <button type="submit" class="btn-primary btn-full-width">Add Your PDF</button>
+                </form>
+            </div>
+            
+            <!-- Upload Result -->
+            <div id="upload-result"></div>
+        </div>
+    </div>
+    
+    <!-- Step 2: Configure -->
+    <div class="workflow-section disabled" id="configure-section">
+        <div class="section-header">
+            <h2>⚙️ Design Your Splits</h2>
+            <span class="section-status status-pending" id="configure-status">Pending</span>
+        </div>
+        <div class="section-content" id="configure-content">
+            <!-- Will be populated after upload -->
+        </div>
+    </div>
+    
+    <!-- Step 3: Results -->
+    <div class="workflow-section disabled" id="results-section">
+        <div class="section-header">
+            <h2>✅ Results</h2>
+            <span class="section-status status-pending" id="results-status">Pending</span>
+        </div>
+        <div class="section-content" id="results-content">
+            <!-- Will be populated after processing -->
+        </div>
+    </div>
+</div>
+
+<!-- Load external JavaScript for progressive enhancement -->
+<script src="{{ url_for('static', filename='js/single_page.js') }}"></script>
+{% endblock %}
+
+{% block scripts %}
+<!-- HTMX Library -->
+<script src="https://unpkg.com/htmx.org@1.9.10"></script>
+{% endblock %}

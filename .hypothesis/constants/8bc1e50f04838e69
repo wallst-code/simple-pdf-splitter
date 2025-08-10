@@ -1,0 +1,4 @@
+# file: C:\Users\senit\source\repos\simple_pdf_splitter\src\services\session_service.py
+# hypothesis_version: 6.137.1
+
+['case_number', 'client_name', 'file_path', 'file_size_mb', 'original_name', 'page_count', 'processing_results', 'splits']

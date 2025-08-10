@@ -1,0 +1,4 @@
+# file: C:\Users\senit\source\repos\simple_pdf_splitter\src\services\logging_service.py
+# hypothesis_version: 6.137.1
+
+['%Y-%m-%d %H:%M:%S', '10485760', '5', 'INFO', 'LOG_BACKUP_COUNT', 'LOG_FILE', 'LOG_LEVEL', 'LOG_MAX_BYTES', 'WARNING', 'logs/app.log', 'pdf_splitter', 'performance', 'security']

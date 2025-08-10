@@ -1,0 +1,4 @@
+# file: C:\Users\senit\source\repos\simple_pdf_splitter\src\views\htmx_routes.py
+# hypothesis_version: 6.137.1
+
+['/htmx/process', '/htmx/reset', '/htmx/upload', 'No file selected', 'No file uploaded', 'POST', 'Upload failed', 'case_number', 'client_name', 'document_code', 'end_page', 'error', 'file_size_mb', 'filename', 'original_name', 'output_name', 'page_count', 'pdf_file', 'splits', 'start_page', 'success']

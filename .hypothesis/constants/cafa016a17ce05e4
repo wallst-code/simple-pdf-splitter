@@ -1,0 +1,4 @@
+# file: C:\Users\senit\source\repos\simple_pdf_splitter\src\models\split_request.py
+# hypothesis_version: 6.137.1
+
+[0.0, 100, 'SplitRequest', 'document_code', 'end_page', 'output_name', 'start_page']

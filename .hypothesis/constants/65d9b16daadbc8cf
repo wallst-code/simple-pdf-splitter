@@ -1,0 +1,4 @@
+# file: C:\Users\senit\source\repos\simple_pdf_splitter\src\views\web_routes.py
+# hypothesis_version: 6.137.1
+
+[404, 413, '/', '/clear-session', '/configure', '/download-all', '/download/<filename>', '/results', 'GET', 'POST', 'add_split', 'application/zip', 'configure.html', 'error', 'file_path', 'filename', 'index', 'original_document', 'pdf_splits.zip', 'process', 'remove_split', 'results', 'results.html', 'single_page.html', 'success', 'success_count', 'total_count', 'w']

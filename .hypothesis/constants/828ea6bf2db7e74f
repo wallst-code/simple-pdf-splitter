@@ -1,0 +1,4 @@
+# file: C:\Users\senit\source\repos\simple_pdf_splitter\src\presenters\web_presenter.py
+# hypothesis_version: 6.137.1
+
+['%H%M%S', ')', '*.pdf', '.', '..', '.pdf', 'Downloads', 'UPLOAD_FOLDER', 'case_number', 'client_name', 'doc_code', 'document_code', 'end_page', 'file_path', 'file_size_mb', 'original_document', 'original_name', 'output_folder', 'output_name', 'page_count', 'results', 'start_page', 'success', 'success_count', 'temp_uploads', 'total_count']

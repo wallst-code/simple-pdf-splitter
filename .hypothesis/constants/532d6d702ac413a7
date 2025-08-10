@@ -1,0 +1,4 @@
+# file: C:\Users\senit\source\repos\simple_pdf_splitter\src\views\htmx_configure.py
+# hypothesis_version: 6.137.1
+
+['/htmx/add-split', '/htmx/configure-form', 'DELETE', 'GET', 'No document loaded', 'No document uploaded', 'POST', 'case_number', 'client_name', 'description', 'document_code', 'end', 'end_page', 'output_name', 'splits', 'start', 'start_page']

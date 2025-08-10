@@ -1,0 +1,4 @@
+# file: C:\Users\senit\source\repos\simple_pdf_splitter\src\config\settings.py
+# hypothesis_version: 6.137.1
+
+[100, 200, 300, 600, 800, 1000, 1200, 10000, '#4CAF50', '#ccc', '#ddd', '#e6e6e6', '#f0f0f0', '#f5f5f5', '.env', '1.0', '100', '127.0.0.1', '3600', '5000', 'DOC001', 'Downloads', 'FLASK_DEBUG', 'FLASK_HOST', 'FLASK_PORT', 'FLASK_SECRET_KEY', 'False', 'Lax', 'PDF Files (*.pdf)', 'PDF Tools', 'PyQt6.QtSvgWidgets', 'Simple PDF Splitter', 'True', 'WTF_CSRF_ENABLED', 'WTF_CSRF_TIME_LIMIT', 'auto_save', 'auto_save_settings', 'background', 'banner.svg', 'border', 'button_hover', 'default', 'drag_drop_enabled', 'header_background', 'header_border', 'max_doc_code_length', 'max_page_number', 'min_page_number', 'output_folder', 'progress_reporting', 'success_button', 'svg_banner_enabled', 'text_background', 'theme', 'true', 'white', 'window_geometry']
