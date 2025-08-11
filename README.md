@@ -4,14 +4,7 @@ A robust, desktop PDF splitting tool with an intuitive graphical interface. Spli
 
 **Privacy-Focused**: This app processes your files locally on your computer, making it more secure than web-based alternatives that transmit files over the internet. No cloud uploads or external servers required.
 
-<img width="895" height="734" alt="SimplePDFSplitter#1" src="https://github.com/user-attachments/assets/d9357d15-7093-437a-9cce-4bc54d60dc42" />
-
-
-
-
-
-
-
+<img width="895" height="734" alt="SimplePDFSplitter#1" src="https://github.com/user-attachments/assets/652c63f2-e15f-431f-8421-27e064526c4c" />
 
 
 ## ⚖️ License & Legal Disclaimer
@@ -33,18 +26,17 @@ This software is distributed under the **MIT License**. See [LICENSE](LICENSE) f
 - **MAINTENANCE**: This project is provided as-is. Active maintenance is not guaranteed
 
 ---
+<img width="892" height="730" alt="SimplePDFSplitter#2" src="https://github.com/user-attachments/assets/8b3ffc09-6631-4887-8ae2-11d9ead73436" />
 
-<img width="892" height="730" alt="SimplePDFSplitter#2" src="https://github.com/user-attachments/assets/55e846f5-d1ab-4dbd-b9e4-e6ac6bd3712a" />
-
-<img width="895" height="730" alt="SimplePDFSplitter#3" src="https://github.com/user-attachments/assets/224e704e-5bd8-4d3e-978f-30b56fec543d" />
+<img width="895" height="730" alt="SimplePDFSplitter#3" src="https://github.com/user-attachments/assets/beb5ea09-ec3c-49e9-8038-11912b4477c7" />
 
 
 ## 🚀 Quick Start - Windows Desktop Application
 
 ### 🪟 Windows Users
-**Download EXE** → **Double-click** → **Start splitting PDFs!**
+**Download installer** → **Run setup** → **Start splitting PDFs!**
 
-*No installation or technical knowledge required.*
+*Professional Windows installation with desktop shortcut.*
 
 ---
 
@@ -55,18 +47,28 @@ This software is distributed under the **MIT License**. See [LICENSE](LICENSE) f
 - **RAM**: 4GB minimum, 8GB recommended
 - **Disk Space**: 200MB free space
 
-### For Windows Users
+### Installation Options
 
 ⚠️ **Don't use the green "Code" button** - go to **[Releases](https://github.com/wallst-code/simple-pdf-splitter/releases)**
 
-1. **Download** `SimplePDFSplitter_Setup.exe`
-2. **Double-click** the installer
+#### Option 1: Installer (Recommended)
+1. **Download** `SimplePDFSplitter_Setup_v1.0.0.exe`
+2. **Double-click** to run the installer
 3. **If Windows shows a security warning:**
    - Click "More info"
    - Click "Run anyway" (this is normal for new software)
 4. **Follow the installation wizard**
+   - Accept license agreement
+   - Choose install location (or use default)
+   - Desktop shortcut will be created
 5. **Launch from desktop shortcut or Start Menu**
-6. **Start splitting PDFs!**
+
+#### Option 2: Portable ZIP
+1. **Download** `SimplePDFSplitter-Windows-v1.0.0.zip`
+2. **Extract** the ZIP file to any folder
+3. **Navigate** to the extracted folder
+4. **Run** `SimplePDFSplitter.exe`
+5. *Optional:* Create your own shortcut
 
 ---
 
