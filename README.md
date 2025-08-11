@@ -4,6 +4,16 @@ A robust, desktop PDF splitting tool with an intuitive graphical interface. Spli
 
 **Privacy-Focused**: This app processes your files locally on your computer, making it more secure than web-based alternatives that transmit files over the internet. No cloud uploads or external servers required.
 
+<img width="895" height="734" alt="SimplePDFSplitter#1" src="https://github.com/user-attachments/assets/d9357d15-7093-437a-9cce-4bc54d60dc42" />
+
+
+
+
+
+
+
+
+
 ## ⚖️ License & Legal Disclaimer
 
 ### License
@@ -23,6 +33,11 @@ This software is distributed under the **MIT License**. See [LICENSE](LICENSE) f
 - **MAINTENANCE**: This project is provided as-is. Active maintenance is not guaranteed
 
 ---
+
+<img width="892" height="730" alt="SimplePDFSplitter#2" src="https://github.com/user-attachments/assets/55e846f5-d1ab-4dbd-b9e4-e6ac6bd3712a" />
+
+<img width="895" height="730" alt="SimplePDFSplitter#3" src="https://github.com/user-attachments/assets/224e704e-5bd8-4d3e-978f-30b56fec543d" />
+
 
 ## 🚀 Quick Start - Windows Desktop Application
 
