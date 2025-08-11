@@ -27,9 +27,9 @@ This software is distributed under the **MIT License**. See [LICENSE](LICENSE) f
 ## 🚀 Quick Start - Windows Desktop Application
 
 ### 🪟 Windows Users
-**Download EXE** → **Double-click** → **Start splitting PDFs!**
+**Download installer** → **Run setup** → **Start splitting PDFs!**
 
-*No installation or technical knowledge required.*
+*Professional Windows installation with desktop shortcut.*
 
 ---
 
@@ -40,18 +40,28 @@ This software is distributed under the **MIT License**. See [LICENSE](LICENSE) f
 - **RAM**: 4GB minimum, 8GB recommended
 - **Disk Space**: 200MB free space
 
-### For Windows Users
+### Installation Options
 
 ⚠️ **Don't use the green "Code" button** - go to **[Releases](https://github.com/wallst-code/simple-pdf-splitter/releases)**
 
-1. **Download** `SimplePDFSplitter_Setup.exe`
-2. **Double-click** the installer
+#### Option 1: Installer (Recommended)
+1. **Download** `SimplePDFSplitter_Setup_v1.0.0.exe`
+2. **Double-click** to run the installer
 3. **If Windows shows a security warning:**
    - Click "More info"
    - Click "Run anyway" (this is normal for new software)
 4. **Follow the installation wizard**
+   - Accept license agreement
+   - Choose install location (or use default)
+   - Desktop shortcut will be created
 5. **Launch from desktop shortcut or Start Menu**
-6. **Start splitting PDFs!**
+
+#### Option 2: Portable ZIP
+1. **Download** `SimplePDFSplitter-Windows-v1.0.0.zip`
+2. **Extract** the ZIP file to any folder
+3. **Navigate** to the extracted folder
+4. **Run** `SimplePDFSplitter.exe`
+5. *Optional:* Create your own shortcut
 
 ---
 
