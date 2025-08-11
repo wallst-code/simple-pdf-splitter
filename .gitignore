@@ -1,49 +1,22 @@
-# Development files (excluded from distribution)
-CLAUDE.md
-CLAUDE.local.md
-todo.md
-change_log.md
-tests/
-pytest.ini
-conftest.py
-.coverage
-htmlcov/
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-wsgi.py
-gunicorn_config.py
-setup_simple.py
-app.py
-cleanup_for_release.py
-
 # Python
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-
-# Virtual Environment
-venv/
-ENV/
 env/
-.venv
+venv/
+.venv/
+*.egg
+*.egg-info/
+
+# Distribution / Build
+build/
+dist/
+*.spec
+*.exe
+*.app
+*.dmg
 
 # IDE
 .vscode/
@@ -51,22 +24,65 @@ env/
 *.swp
 *.swo
 *~
+
+# OS
 .DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment
+.env
+.env.local
+*.local
 
 # Logs
 *.log
-logs/*.log
+logs/
 
-# Environment variables
-.env.local
-.env.*.local
-
-# Temporary files
-temp_uploads/*
-!temp_uploads/.gitkeep
+# Temporary
+temp/
+tmp/
 *.tmp
 *.temp
+temp_uploads/
 
-# OS files
-Thumbs.db
-desktop.ini
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+tests/
+
+# Documentation (local only)
+CLAUDE.md
+CLAUDE.local.md
+todo.md
+change_log.md
+HANDOFF_MEMO.md
+PIVOT_MEMO.md
+NEXT_STEPS.md
+UI_REQUIREMENTS.md
+
+# Old/unused files
+main_backup.py
+main_frozen.py
+frozen_app_wrapper.py
+build_*.py
+create_*.py
+setup_*.py
+clean_*.sh
+*.command
+wsgi.py
+gunicorn_config.py
+app.py
+src/gui/main_window.py
+src/gui/main_window_styled.py
+test_*.py
+convert_banner.py
+
+# Package files
+*.zip
+*.tar.gz
+SimplePDFSplitter-*
+SimplePDFSplitter.bat

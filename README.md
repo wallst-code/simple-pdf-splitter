@@ -1,26 +1,33 @@
 # Simple PDF Splitter
 
-A robust, local PDF splitting tool with an intuitive web interface. Split large PDFs into smaller files quickly and securely - all processing happens locally on your computer with **zero data transmission**. No cloud uploads, no data retention, no tracking.
+A robust, desktop PDF splitting tool with an intuitive graphical interface. Split large PDFs into smaller files quickly and securely - designed for local processing without cloud dependencies.
 
-**Privacy**: This app processes your files locally with no data storage after you exit the program - like a digital paper shredder that only keeps what you want.
+**Privacy-Focused**: This app processes your files locally on your computer, making it more secure than web-based alternatives that transmit files over the internet. No cloud uploads or external servers required.
 
-## ⚖️ License & Disclaimer
+## ⚖️ License & Legal Disclaimer
 
-**MIT License** - Free to use, modify, and distribute.
+### License
+This software is distributed under the **MIT License**. See [LICENSE](LICENSE) file for full terms.
 
-**IMPORTANT DISCLAIMER**: This software is provided "AS IS" without warranty of any kind, express or implied. Use at your own risk. The author assumes no responsibility for any data loss, system issues, or other consequences arising from the use of this software.
+### NO WARRANTY DISCLAIMER
+**THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.**
 
-**Note**: This project is provided as-is. While the code is available for review and modification, active maintenance is not guaranteed.
+**IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.**
+
+### Important Legal Notices
+- **USE AT YOUR OWN RISK**: The author(s) assume no responsibility for any data loss, corruption, system issues, or other consequences arising from the use of this software
+- **NO LEGAL ADVICE**: This software is a tool only and does not constitute legal advice
+- **DATA RESPONSIBILITY**: You are solely responsible for the handling and protection of your data
+- **COMPLIANCE**: Users are responsible for ensuring their use complies with applicable laws and regulations
+- **NO GUARANTEE**: No guarantee of fitness for any particular purpose is provided
+- **MAINTENANCE**: This project is provided as-is. Active maintenance is not guaranteed
 
 ---
 
-## 🚀 Quick Start - Choose Your Platform
+## 🚀 Quick Start - Windows Desktop Application
 
 ### 🪟 Windows Users
 **Download EXE** → **Double-click** → **Start splitting PDFs!**
-
-### 🍎 Mac Users  
-**Download** → **Extract** → **Double-click .command file** → **Start splitting PDFs!**
 
 *No installation or technical knowledge required.*
 
@@ -30,328 +37,246 @@ A robust, local PDF splitting tool with an intuitive web interface. Split large 
 
 ### System Requirements
 - **Windows**: Windows 10 or later (64-bit)
-- **macOS**: macOS 10.14 (Mojave) or later  
 - **RAM**: 4GB minimum, 8GB recommended
-- **Disk Space**: 100MB free space
-- **Browser**: Any modern browser (Chrome, Firefox, Edge, Safari)
+- **Disk Space**: 200MB free space
 
 ### For Windows Users
 
 ⚠️ **Don't use the green "Code" button** - go to **[Releases](https://github.com/wallst-code/simple-pdf-splitter/releases)**
 
-1. **Download** `Simple PDF Splitter.exe` (39 MB)
-2. **Double-click** the EXE file
+1. **Download** `SimplePDFSplitter_Setup.exe`
+2. **Double-click** the installer
 3. **If Windows shows a security warning:**
    - Click "More info"
    - Click "Run anyway" (this is normal for new software)
-4. **Your browser opens automatically**
-5. **Start splitting PDFs!**
-
-### For Mac Users
-
-⚠️ **Don't use the green "Code" button** - go to **[Releases](https://github.com/wallst-code/simple-pdf-splitter/releases)**
-
-1. **Download** `SimplePDFSplitter-Mac.zip`
-2. **Extract** the ZIP file (double-click it)
-3. **Right-click** `SimplePDFSplitter.command` and select "Open"
-   - First time only: Click "Open" in the security dialog
-4. **Your browser opens automatically**
-5. **Start splitting PDFs!**
-
-**Note**: Mac version requires Python 3 (pre-installed on most Macs since 10.15)
+4. **Follow the installation wizard**
+5. **Launch from desktop shortcut or Start Menu**
+6. **Start splitting PDFs!**
 
 ---
 
-## 🖥️ For Developers (Source Code)
+## ✨ Features
 
-### If you want to run from source code:
+- **🔒 Privacy-Focused** - Local processing without internet transmission
+- **📄 Smart Page Splitting** - Split by page ranges with automatic validation
+- **🏷️ Custom Naming** - Name each split with client, case, and document codes
+- **📊 Batch Processing** - Split multiple sections in one operation
+- **🎯 Legal Professional Focus** - Designed for law firms and legal departments
+- **💻 Native Desktop Application** - Professional Windows application
+- **🚀 Fast Performance** - Optimized PDF processing engine
+- **📁 Organized Output** - Files saved with clear naming convention
 
-1. **Clone the repository**
-2. **Install Python 3.8+**
-3. **Install dependencies**: `pip install -r requirements.txt`
-4. **Run**: `python main.py`
+## 📖 How to Use
 
-#### ⚠️ Expected Security Warning
-Windows will show this warning on first run:
+### Step 1: Load Your PDF
+- Click **"Select PDF File"** button
+- Or drag and drop your PDF into the window
+- The application displays the filename and total page count
 
+### Step 2: Configure Client Information
+- Enter **Client Name** (e.g., "Smith, John")
+- Enter **Case Number** (e.g., "2024-CV-001234")
+
+### Step 3: Define Split Sections
+- Click **"+ Add Split"** to add a new section
+- For each section, specify:
+  - **Start Page** and **End Page** (auto-calculated)
+  - **Document Code** (e.g., "EXH001", "DEPO")
+  - **Description** (optional additional text)
+- Green checkmarks appear when entries are valid
+- Remove sections with the **×** button if needed
+
+### Step 4: Process the PDF
+- Click **"Run Split"** to process
+- Progress shown in status area
+- Files are saved to your Downloads folder
+- Success dialog shows all created files
+- Click **"Open Folder"** to view the files
+
+*Note: Each file gets a unique ID added to prevent naming collisions and other nerdy technical problems. Think of it as your file's social security number, but less controversial.*
+
+## 🎯 Use Cases
+
+### Legal Document Management
+- **Discovery Documents**: Split large discovery productions into individual exhibits
+- **Court Filings**: Separate combined filings into individual documents
+- **Depositions**: Extract specific page ranges from transcripts
+- **Contracts**: Split multi-document contract packages
+- **Medical Records**: Organize records by date or provider
+- **Real Estate**: Separate closing documents
+
+### Example Workflow
 ```
-Windows protected your PC
-Microsoft Defender SmartScreen prevented an unrecognized app from starting.
-```
-
-**This is normal for unsigned software. To proceed:**
-1. Click **"More info"**
-2. Click **"Run anyway"**
-3. The application will start and remember your choice for future runs
-
-### macOS Installation
-
-1. **Extract the ZIP file** to `/Applications/Simple-PDF-Splitter` (or your preferred location)
-2. **Navigate to the extracted folder**
-3. **Double-click the application bundle**
-
-#### ⚠️ Expected Security Warnings
-macOS will show these warnings on first run:
-
-**Warning 1 - Gatekeeper:**
-```
-"Simple PDF Splitter" cannot be opened because it is from an unidentified developer.
-```
-
-**To resolve:**
-1. Go to **System Preferences** → **Security & Privacy**
-2. Click **"Open Anyway"** next to the blocked application message
-3. Confirm by clicking **"Open"** in the dialog
-
-**Warning 2 - Quarantine Dialog:**
-```
-"Simple PDF Splitter" is an app downloaded from the internet. Are you sure you want to open it?
-```
-- Click **"Open"** to continue
-
----
-
-## 🌐 Using the Application
-
-1. **Start the application** using the steps above
-2. **Open your web browser** and go to: `http://localhost:5000`
-3. **Upload your PDF** and configure split settings
-4. **Download your split files** directly to your computer
-
-### Browser Compatibility
-- ✅ Chrome (recommended)
-- ✅ Firefox  
-- ✅ Safari
-- ✅ Edge
-
----
-
-## Features
-
-### Professional GUI Interface
-- Intuitive drag-and-drop interface with custom branding
-- Real-time validation and feedback
-- Progress tracking with visual indicators
-
-### Batch Processing
-- Split multiple page ranges from the same document in one operation
-- Configure unlimited splits with custom names
-- Process all splits simultaneously
-
-### Client & Case Management
-- Built-in fields for client names and case numbers
-- Professional file naming conventions
-- Automatic organization of output files
-
-### Advanced Statistics
-- Real-time document coverage analysis
-- Gap detection to identify missed pages
-- Visual representation of split coverage
-
-### Professional File Naming
-- Automatic naming with client info, case numbers, and document codes
-- Format: `{client_name}_{case_number}_{doc_code}_{optional_name}_{pages}.pdf`
-- Example: `John_Smith_CV2024-001_DISC001_Medical_Records_001-025.pdf`
-
-### Configurable Output
-- Customizable output folder with settings persistence
-- Automatic folder creation
-- Recent folder history
-
----
-
-## 🛠️ Common Issues
-
-### Application Won't Start
-- **Windows**: If you see security warnings, click "More info" then "Run anyway"
-- **macOS**: Go to System Preferences → Security & Privacy → click "Open Anyway"
-- **Both**: Make sure you extracted the ZIP file completely before running
-
-### Windows Error Codes
-If you see error codes like "0xc000007b" or similar:
-- These are Windows system errors
-- Search for the specific error code on Microsoft's support site
-- Often related to missing Windows components
-- Your IT department may need to help
-
-### Browser Can't Connect
-- Wait 10-15 seconds after starting the application
-- Make sure the application is still running (check if the window is open)
-- Try refreshing the browser page
-- Try a different browser (Chrome or Firefox recommended)
-
-### PDF Processing Issues
-- **Large files**: May take longer to process - be patient
-- **Downloads not starting**: Check your browser's download settings
-- **Error messages**: Take a screenshot for reference
-
-### General Tips
-- Restart the application if something seems stuck
-- Make sure your PDF files aren't corrupted or password-protected
-- Close other applications if running low on memory
-
----
-
-## 🔒 Security & Privacy
-
-### Why These Security Warnings Appear
-This software is **unsigned** because code signing certificates cost hundreds of dollars annually. The warnings are your operating system being cautious about any unsigned executable.
-
-### Complete Privacy & Data Security
-- ✅ **100% local processing** - no internet connection required or used
-- ✅ **Zero data transmission** - nothing is sent anywhere, ever
-- ✅ **No data retention** - files are processed in memory and immediately released
-- ✅ **No persistent storage** - all data is cleared when the application exits
-- ✅ **No user data capture** - no logs, no analytics, no tracking of any kind
-- ✅ **No servers involved** - purely localhost application
-- ✅ **Files never leave your computer** - complete air-gap security
-- ✅ **Source code available** for independent security verification
-
-**In simple terms**: This app works exactly like a desktop calculator - it helps you do something useful, then forgets everything. Your PDFs and any information about them exist only on your computer and nowhere else.
-
-### Verification
-**File Integrity**: Each release includes SHA256 checksums. Verify your download:
-
-**Windows (PowerShell):**
-```powershell
-Get-FileHash Simple-PDF-Splitter-Windows.zip -Algorithm SHA256
+Original: Discovery_Production.pdf (500 pages)
+↓
+Split into:
+- Smith_2024CV001234_EXH001_Contract.pdf (pages 1-25)
+- Smith_2024CV001234_EXH002_Emails.pdf (pages 26-150)
+- Smith_2024CV001234_EXH003_Financial.pdf (pages 151-300)
+- Smith_2024CV001234_EXH004_Correspondence.pdf (pages 301-500)
 ```
 
-**macOS/Linux (Terminal):**
+## 🛡️ Security & Privacy
+
+### Privacy-Focused Design
+- ✅ **Local Processing** - Works without internet connection
+- ✅ **No Cloud Dependencies** - Files remain on your computer
+- ✅ **No Analytics** - Usage is not tracked
+- ✅ **Minimal Data Footprint** - Temporary files cleaned after use
+- ✅ **Desktop Application** - No web servers involved
+- ✅ **Open Source** - Code available for inspection
+
+### Enhanced Privacy
+- Processing occurs locally, reducing exposure compared to cloud services
+- No requirement to upload files to third-party servers
+- More private than web-based alternatives that transmit data
+- Designed to minimize data exposure risks
+
+## 🏗️ Building from Source (For Developers)
+
+### Prerequisites
+- Python 3.9+
+- PyQt6
+- PyMuPDF
+
+### Development Setup
 ```bash
-shasum -a 256 Simple-PDF-Splitter-macOS.zip
+# Clone the repository
+git clone https://github.com/wallst-code/simple-pdf-splitter.git
+cd simple-pdf-splitter
+
+# Create virtual environment
+python -m venv venv
+venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the application
+python main_gui.py
 ```
 
-Compare the output with the checksum provided in the release notes.
+### Build Executable
+```bash
+# Windows
+build_gui.bat
 
----
+# The executable will be in dist/SimplePDFSplitter/
+```
 
-## Development
+### Create Installer
+```bash
+# Requires Inno Setup Compiler
+# Run Inno Setup with installer_setup.iss
+```
 
-### Running from Source
-For developers who want to run from source code:
-
-1. **Get the source code**
-   ```bash
-   # Clone from your repository when available
-   # Or extract from source distribution
-   cd simple-pdf-splitter
-   ```
-
-2. **Install Python 3.12+**
-   - Download from [python.org](https://www.python.org/downloads/)
-
-3. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Run the application**
-   ```bash
-   python app.py
-   ```
-
-5. **Open browser** to `http://localhost:5000`
-
-### Project Architecture
-
-This application follows professional software development patterns:
+## 📁 Project Structure
 
 ```
 simple_pdf_splitter/
-├── app.py                         # Flask application entry point
+├── main_gui.py                    # Application entry point
 ├── src/
-│   ├── config/                    # Configuration management
-│   │   ├── settings.py            # Application constants
-│   │   ├── messages.py            # User-facing strings
-│   │   └── paths.py               # Path management
-│   ├── models/                    # Data models
-│   │   └── split_request.py       # Request/response models
-│   ├── services/                  # Core services
-│   │   ├── pdf_service.py         # PDF manipulation
-│   │   ├── file_validator.py      # File validation
-│   │   └── session_service.py     # Session management
-│   ├── presenters/                # MVP presenters
-│   │   ├── web_presenter.py       # Main presenter
-│   │   ├── upload_presenter.py    # Upload logic
-│   │   └── process_presenter.py   # Processing logic
-│   └── views/                     # User interface
-│       ├── web_routes.py          # Flask routes
-│       ├── htmx_routes.py         # HTMX endpoints
-│       └── htmx_configure.py      # Configuration UI
-├── templates/                     # HTML templates
-├── static/                        # CSS, JS, images
-└── tests/                         # Test suite
+│   ├── gui/                       # PyQt6 GUI components
+│   │   ├── main_window_clean.py   # Main application window
+│   │   ├── widgets/               # Custom widgets
+│   │   └── dialogs/               # Dialog windows
+│   ├── services/                  # Business logic
+│   │   ├── pdf_service.py         # PDF operations
+│   │   └── pdf_processor.py       # Processing engine
+│   └── config/                    # Configuration
+│       └── settings.py            # Application settings
+├── static/                        # Static resources
+│   └── images/                    # Icons and banners
+└── requirements.txt               # Python dependencies
 ```
 
-### Architecture Highlights
+## 🎨 User Interface
 
-- **MVP Pattern** - Model-View-Presenter for clean separation of concerns
-- **Configuration Management** - Centralized settings and constants
-- **Type Safety** - Full type hints throughout codebase
-- **Error Handling** - Comprehensive validation and user feedback
-- **Threading** - Non-blocking UI with background PDF processing
-- **Professional Documentation** - Complete docstrings and code comments
+The application features a clean, professional interface:
+- **Header**: Application branding and version
+- **File Selection**: Large drop zone for PDF files
+- **Configuration Panel**: Client and case information
+- **Split Configuration**: Dynamic list of split sections
+- **Action Buttons**: Clear Run Split and Add Split buttons
+- **Status Area**: Real-time processing feedback
 
----
+## 🔧 Troubleshooting
 
-## 📋 System Information for Support
+### Common Issues
 
-If you need help, please include this information:
+**Windows Security Warning**
+- This is normal for downloaded executables
+- Click "More info" then "Run anyway"
 
-**Windows:**
-```
-OS Version: [Windows 10/11 + build number]
-Application Version: [from About dialog]
-Error Message: [exact text]
-Browser: [Chrome/Firefox/Edge + version]
-```
+**PDF Won't Load**
+- Ensure the PDF is not password protected
+- Check that the file is not corrupted
+- Try copying the PDF to a different location
 
-**macOS:**
-```
-OS Version: [macOS version]
-Application Version: [from About dialog]  
-Error Message: [exact text]
-Browser: [Chrome/Firefox/Safari + version]
-```
-
----
-
-## 🆘 Getting Help
-
-1. **Check this README** - covers 90% of common issues
-2. **Visit the About page** in the application for support information
-3. **For developers**: Check the source code and documentation
-
-### Support
-- Create detailed bug reports with system information
-- Include screenshots when relevant for visual issues
-- Provide step-by-step reproduction steps for bugs
-
----
-
-## 🔄 Updates
-
-**Automatic updates**: Not available (security by design)
-**Manual updates**: 
-1. Download the latest release
-2. Replace the old application folder
-3. Your settings and preferences are preserved
-
-**Stay informed**: 
-- ⭐ **Star this repository** to get notified of new releases
-- 👀 **Watch** for important security updates
-
----
+**Application Won't Start**
+- Ensure Windows 10 or later
+- Check that you have sufficient disk space
+- Try running as Administrator
 
 ## 🤝 Contributing
 
-Found a bug? Have a feature request? 
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
 
-- 🐛 **Bug Reports**: Document the issue with clear reproduction steps
-- 💡 **Feature Requests**: Describe your use case and proposed solution
-- 🔧 **Code Contributions**: Fork the repository when available
+### How to Contribute
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
+
+### Code Standards
+- Follow PEP 8 for Python code
+- Maximum 200 lines per class
+- Maximum 20 lines per method
+- Clear, descriptive variable names
+- Comment complex logic
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+### MIT License Summary
+- ✅ Commercial use allowed
+- ✅ Modification allowed
+- ✅ Distribution allowed
+- ✅ Private use allowed
+- ❌ No liability
+- ❌ No warranty
+
+**The software is provided "as is", without warranty of any kind.**
+
+## 🙏 Acknowledgments
+
+- Built with [PyQt6](https://www.riverbankcomputing.com/software/pyqt/) for the GUI
+- PDF processing powered by [PyMuPDF](https://pymupdf.readthedocs.io/)
+- Icon design by [Icons8](https://icons8.com)
+- Designed for legal professionals by legal professionals
+
+## 📧 Support
+
+For issues, questions, or suggestions:
+- Open an issue on [GitHub](https://github.com/wallst-code/simple-pdf-splitter/issues)
+- Check existing issues for solutions
+- Provide detailed error descriptions
+
+## 🚀 Future Enhancements
+
+Planned features for future releases:
+- [ ] Mac and Linux support
+- [ ] PDF merging capabilities
+- [ ] Bookmark preservation
+- [ ] OCR support for scanned documents
+- [ ] Custom output folder selection
+- [ ] Page rotation and reordering
+- [ ] Batch file processing
 
 ---
 
-*Made with ❤️ for document workflow efficiency. No cloud required.*
+**Simple PDF Splitter** - Professional PDF splitting for legal professionals
+*Version 1.0.0*
+
+Made with ❤️ for the legal community
